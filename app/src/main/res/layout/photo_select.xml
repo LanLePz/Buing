@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp">
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:background="#FFF5F5F5">
+            <ImageView
+                android:id="@+id/null_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/add_picture"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/main_gridView_item_photo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

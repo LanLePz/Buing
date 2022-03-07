@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ahyapo.buing">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.PublicData"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/logo"
+        android:sharedUserId="android.uid.system"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Buing">
+        <activity android:name=".activity.PayActivity"></activity>
+        <activity android:name=".activity.WalletActivity" />
+        <activity android:name=".activity.PublishActivity" />
+        <activity android:name=".activity.MineInfoActivity" />
+        <activity android:name=".activity.DynamicItemInfoActivity" />
+        <activity android:name=".activity.ClassItemInfoActivity" />
+        <activity android:name=".activity.DisItemInfoActivity" />
+        <activity android:name=".activity.DissertationActivity" />
+        <activity android:name=".activity.ClassItemActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.IndexInfoActivity" />
+        <activity android:name=".activity.WelActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
